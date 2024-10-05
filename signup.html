@@ -2,16 +2,24 @@
 <html>
       <title>sign.up</title>
 	  <body style = "background-color:green;color:yellow">
-	        <h1>User registrarion</h1>
+	        <fieldset>
+	        <legend><h1>User registrarion</h1></legend>
 			<form>
 			      <label for = "Username">Enter your username</label>
 				  <input type = "text" id = "Username" name = "Username">
 				  <br>
 				  <label for = 'password'>Enter your password</label>
 				  <input type = "password" id = 'password' name = "password">
+				  <br>
+				  <label>location near you:</label>
+				  <select name = "shop location" id = "shop location">
+				  <option>310 West 38th street, NY</option>
+				  <option>2333 Broadway, NY</option>
+				  <option>200 west 44th street, NY</option>
+				  </select>
 			</form>
 			<br>
-			<h1>CUSTOMER SERVICE</h1>
+			<legend><h1>CUSTOMER SERVICE</h1></legend>
 		<form>
 		     <label for="fname">would you buy any of the products on this site?</label>
 			 <br>
@@ -32,5 +40,9 @@
 			 <br>
 			 <p><a href = "index.html">go back</a></p>
 		</form>
+		</fieldset>
+		<footer>
+		<small>&copy;2024 pablo's Dream Clothing.All Rights Reserved</small>
+		</footer>
 	  </body>
 </html>
