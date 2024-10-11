@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+	<style>
+        body {
+            background-image: url('dream_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body style="background-color:orange; color:yellow;">
+    <fieldset>
+        <legend><h1><em>ORDER</em></h1></legend>
+        <br>
+        <form action="/action_page.php" target="_blank" method="post">
+            <label for="Username">Enter your username:</label>
+            <input type="text" id="Username" name="Username">
+            <br><br>
+            <label for = "order choice: ">please selecte what you would like to purchase</label>
+					    <select id="order choice" name = "order choice">
+						   <option value="T-shirt">"Reckless" white tee R450</option>
+						   <option value="T-shirt">"Reckless" black tee R450</option>
+						   <option value="T-shirt">"Worldwide" tee R450</option>
+						</select>
+						<label for = "size">Size:</label>
+						<input type = "radio">
+            <br><br>
+            
+            <label for="check_purchase">Do you want to continue with this transaction?</label>
+            <input type="checkbox" id="check_purchase" name="check_purchase">
+            <br><br>
+            
+            <p>How would you like to pay?</p>
+            <ol>
+                <li><input type="radio" id="mastercard" name="cardtype" value="mastercard">
+                    <label for="mastercard">Mastercard</label></li>
+                <li><input type="radio" id="visa" name="cardtype" value="visa">
+                    <label for="visa">Visa</label></li>
+                <li><input type="radio" id="diners_card" name="cardtype" value="diners_card">
+                    <label for="diners_card">Diners Card</label></li>
+            </ol>
+            <br><br>
+            
+            <input type="submit" id="submit_button" value="Submit">
+            <input type="reset" id="clear_button" value="Clear Form">
+        </form>
+    </fieldset>
+</body>
+</html>
